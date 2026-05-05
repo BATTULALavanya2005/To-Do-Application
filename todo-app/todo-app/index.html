@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">📝 My To-Do List</h2>
+    
+    <div class="input-group mb-3">
+      <input type="text" id="taskInput" class="form-control" placeholder="Enter a new task..." />
+      <div class="input-group-append">
+        <button class="btn btn-success" id="addTaskBtn">Add Task</button>
+      </div>
+    </div>
+
+    <div class="btn-group mb-3" role="group">
+      <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="pending">Pending</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <ul class="list-group" id="taskList"></ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

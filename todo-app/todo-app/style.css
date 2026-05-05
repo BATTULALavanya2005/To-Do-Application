@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  color: #333;
+  max-width: 600px;
+  margin-top: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-group-item.completed {
+  text-decoration: line-through;
+  background-color: #e0f7fa;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+}
